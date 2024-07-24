@@ -1,0 +1,67 @@
+/*Section About Myself*/
+/*
+
+*/
+
+/*Galery / About Myself*/
+/* Стилізація галереї */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  
+  .large-photo {
+    margin-bottom: 20px;
+  }
+  
+  .large-photo img {
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .thumbnails {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .thumbnails img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+  }
+/* End of the gallery*/
+
+/*Personal info*/
+.personal{
+    display: flex;
+    flex-direction:column;
+    gap: 30px;
+}
+.job-name {
+    letter-spacing: 0.07em;
+  }
+  
+  p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  }
+  .intoduce-text{
+    font-size: 17px;
+  }
+  .qualities-text{
+    border: 2px solid #191970;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 2px 5px #191970;
+    font-style: italic;
+  }
+  .about-myself{
+    margin-bottom: 80px;
+   }
+   /*End of Personal info and of section about myself*/
+   /* Start of the section education*/
+   
