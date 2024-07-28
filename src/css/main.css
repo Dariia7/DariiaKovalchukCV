@@ -64,4 +64,40 @@
    }
    /*End of Personal info and of section about myself*/
    /* Start of the section education*/
-   
+   svg {
+    width: 48px;
+    height: 48px;
+  }
+  .icon {
+     /* Add spacing between icon and link */
+    stroke: #191970;
+    fill: #191970;
+  }
+  .spacing{
+    margin-bottom: 20px;
+  }
+  .institution{
+font-family: sans-serif;
+font-weight: 300;
+font-size: 16px;
+line-height: 170%;
+letter-spacing: 0.03em;
+
+}
+  .bold-style{
+    font-weight: bold;
+}
+  
+  .edc-move-down{
+    margin-bottom: 30px;
+}
+.link-active {
+    transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out;
+  }
+  
+  .link-active:hover,
+  .link-active:focus {
+    color: #8B4513;
+    font-size: 25px;
+  }
+  
