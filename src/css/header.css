@@ -1,10 +1,11 @@
 /*Mobile*/ 
 .header-container{
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 .header-logo, h2 {
   font-family: Impact;
@@ -18,8 +19,16 @@
 .second-part-logo{
   color: #191970;
 }
-.header-list{
+.header-contacts{
 font-size: 16px;
 line-height: 150%;
 letter-spacing: 0.03em;
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+  .header-contacts {
+    font-size: 18px;
+    font-weight: bold;
+  }
 }

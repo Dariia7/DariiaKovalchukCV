@@ -1,10 +1,5 @@
 /*Section About Myself*/
-/*
-
-*/
-
 /*Galery / About Myself*/
-/* Стилізація галереї */
 .gallery {
     display: flex;
     flex-direction: column;
@@ -31,7 +26,34 @@
     height: auto;
     cursor: pointer;
   }
-/* End of the gallery*/
+
+  /* Tablet styles */
+  /*
+@media (min-width: 768px) and (max-width: 1024px) {
+  .gallery {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .large-photo {
+    width: 50%;
+    margin-right: 20px;
+  }
+  
+  .large-photo img {
+    max-width: 400px;
+  }
+  
+  .thumbnails {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .thumbnails img {
+    margin-bottom: 10px;
+  }
+}
+ End of the gallery*/
 
 /*Personal info*/
 .personal{
@@ -65,11 +87,10 @@
    /*End of Personal info and of section about myself*/
    /* Start of the section education*/
    svg {
-    width: 48px;
-    height: 48px;
+    width: 34px;
+    height: 34px;
   }
   .icon {
-     /* Add spacing between icon and link */
     stroke: #191970;
     fill: #191970;
   }
@@ -79,25 +100,77 @@
   .institution{
 font-family: sans-serif;
 font-weight: 300;
-font-size: 16px;
+
 line-height: 170%;
 letter-spacing: 0.03em;
-
 }
+
   .bold-style{
     font-weight: bold;
 }
   
-  .edc-move-down{
+  .move-down{
     margin-bottom: 30px;
 }
 .link-active {
-    transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out;
+    transition: color 0.4s ease-in-out, font-size 0.4s ease-in-out; /*Перевірити чому font-size не працює*/
+    transition: stroke 0.4s, ease-in-out, fill 0.4s ease-in-out;
   }
   
   .link-active:hover,
   .link-active:focus {
     color: #8B4513;
-    font-size: 25px;
+    font-size: 14px;
+   
   }
+
+
+.link-active:hover .icon,
+.link-active:focus .icon {
+  stroke: #8B4513;
+  fill: #8B4513;
+}
+.icon-educ-section {
+  margin-right: 10px; 
+}
   
+ 
+  /*End of the section education*/
+
+  /*Start - experience*/
+  .experience{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+.icon-person{
+  border: 1px solid #191970; /* Налаштуйте колір і ширину рамки */
+  border-radius: 5px; /* Додайте закруглені кути */
+  width: 30px;
+  height: 30px;
+   margin-bottom: -3px;
+ 
+  
+}
+.icon-container {
+  text-align: center; /* Вирівнюємо вміст контейнера по горизонталі */
+  display: inline-flex; /* Робимо контейнер flex-контейнером */
+  align-items: center; /* Вирівнюємо елементи по вертикалі (якщо потрібно) */
+
+}
+.inside-icon{
+  transform: translateX(-1px);
+}
+.link-active:hover .icon-person path,
+.link-active:focus .icon-person path {
+  fill: #8B4513;
+  stroke: #8B4513;
+  transition: fill 0.3s ease;
+  transition: stroke 0.3s ease;
+
+}
+.link-active:hover .icon-person,
+.link-active:focus .icon-person {
+  border: 2px solid #8B4513;
+  transition: border 0.3s ease;
+}
