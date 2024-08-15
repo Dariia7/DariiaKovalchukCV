@@ -28,4 +28,23 @@ text-align: center;
     .footer-logo-container {
       display: none;
     }
+    .footer-socials-list{
+     justify-content: center;
+     align-items: center;
+     font-size: 17px;
+     margin-bottom: 40px;
   }
+}
+@media only screen and (min-width: 1028px) {
+  .footer-logo-and-socials {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-socials-list{
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+  .subscribe-title{
+   font-size: 16px;
+}
+}

@@ -31,6 +31,7 @@
     margin-right: -5px;
 }
 
+
 .running__inner {
     display: flex;
     align-items: center;
@@ -108,21 +109,21 @@
 
 @media only screen and (min-width: 768px) {
     .tech-skills {
-        height: 282px;
-        margin-bottom: 124px;
+        height: 200px;
+        margin-bottom: 50px;
     }
     .running {
-        height: 282px;
+        height: 200px;
     }
     .running__inner {
         padding: 40px 0px;
-        height: 128px;
+        height: 96px;
     }
 }
 
 @media only screen and (min-width: 1280px) {
     .tech-skills {
-        margin-bottom: 164px;
+        margin-bottom: 64px;
     }
     .running {
         height: 315px;

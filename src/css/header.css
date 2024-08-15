@@ -32,3 +32,12 @@ letter-spacing: 0.03em;
     font-weight: bold;
   }
 }
+/*Desktop*/
+@media only screen and (min-width: 1280px) {
+  .header-contacts {
+   font-size: 20px;
+  }
+  .header-logo{
+    font-size: 30px;
+  }
+}

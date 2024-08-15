@@ -1,60 +1,77 @@
-/*Section About Myself*/
-/*Galery / About Myself*/
+
+/* About myself - Galery*/
 .gallery {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 80px;
   }
-  
   .large-photo {
     margin-bottom: 20px;
   }
-  
   .large-photo img {
     width: 100%;
-    max-width: 700px;
+    
   }
-  
   .thumbnails {
     display: flex;
     gap: 10px;
   }
-  
-  .thumbnails img {
+   .thumbnails img {
     width: 100px;
     height: auto;
     cursor: pointer;
   }
 
-  /* Tablet styles */
-  /*
-@media (min-width: 768px) and (max-width: 1024px) {
-  .gallery {
-    flex-direction: row;
-    align-items: flex-start;
-  }
+/* Tablet styles */
   
-  .large-photo {
-    width: 50%;
-    margin-right: 20px;
+  @media (min-width: 768px) {
+    .gallery {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+     }
+    .large-photo {
+      width: 50%;
+    }
+    
+    .thumbnails {
+     width: 50%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+      
+    }
+   .smallPhoto {
+      width: 150px !important;
+      height: auto !important;
+    }
+    
   }
-  
-  .large-photo img {
-    max-width: 400px;
-  }
-  
-  .thumbnails {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .thumbnails img {
-    margin-bottom: 10px;
-  }
+  /*Desktop style*/
+  @media (min-width: 1280px){
+    .gallery {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+     }
+    .large-photo {
+      width: 42%;
+    }
+    
+    .thumbnails {
+     width: 50%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+      
+    }
+   .smallPhoto {
+    width: calc(60% - 5px);
+    width: 235px !important;
+    height: auto;
 }
- End of the gallery*/
-
+  } /*End of the gallery*/
 /*Personal info*/
 .personal{
     display: flex;
@@ -84,11 +101,48 @@
   .about-myself{
     margin-bottom: 80px;
    }
-   /*End of Personal info and of section about myself*/
-   /* Start of the section education*/
+/* Tablet styles */
+  @media (min-width: 768px) {
+  .job-name{
+  text-align: center;
+  font-size: 30px;
+  }
+  .hero-text{
+font-weight: 400;
+font-size: 20px;
+line-height: 160%;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+text-align: center;
+  }
+  .qualities-text{
+    text-align: center;
+    font-size: 18px;
+  }
+}
+/*Desktop*/
+@media only screen and (min-width: 1280px) {
+   .job-name{
+    font-size: 35px;
+  }
+  .hero-text{
+    font-weight: 600;
+    line-height: 200%;
+  }
+  .qualities-text{
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 540;
+  }
+}
+/*End of Personal info and of section about myself*/
+/* Start of the section education*/
    svg {
     width: 34px;
     height: 34px;
+  }
+  .lineBreak{
+    display: none;
   }
   .icon {
     stroke: #191970;
@@ -108,23 +162,18 @@ letter-spacing: 0.03em;
   .bold-style{
     font-weight: bold;
 }
-  
-  .move-down{
+  .education-text{
     margin-bottom: 30px;
 }
 .link-active {
     transition: color 0.4s ease-in-out, font-size 0.4s ease-in-out; /*Перевірити чому font-size не працює*/
     transition: stroke 0.4s, ease-in-out, fill 0.4s ease-in-out;
   }
-  
   .link-active:hover,
   .link-active:focus {
     color: #8B4513;
     font-size: 14px;
-   
   }
-
-
 .link-active:hover .icon,
 .link-active:focus .icon {
   stroke: #8B4513;
@@ -133,11 +182,50 @@ letter-spacing: 0.03em;
 .icon-educ-section {
   margin-right: 10px; 
 }
-  
- 
-  /*End of the section education*/
-
-  /*Start - experience*/
+@media (min-width: 768px){
+  .education-text{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.07em;
+  }
+  .lineBreak{
+    display: initial;
+  }
+  .institution{
+    font-size: 18px;
+  }
+  .spacing{
+    margin-bottom: 40px;
+  }
+  .link-active:hover,
+  .link-active:focus {
+ font-size: 19px;
+  }
+}
+/*Desktop*/
+@media only screen and (min-width: 1280px) {
+  .education-text{
+    font-size: 35px;
+  }
+  .institution{
+    font-size: 21px;
+  }
+  .spacing{
+    margin-bottom: 60px;
+}
+.bold-style{
+  font-size: 23px;
+}
+.link-active:hover,
+.link-active:focus {
+ font-size: 23px;
+  }
+  .lineBreak{
+    display: initial;
+  }
+}
+/*End of the section education*/
+/*Start - experience*/
   .experience{
     display: flex;
     flex-direction: column;
@@ -149,14 +237,11 @@ letter-spacing: 0.03em;
   width: 30px;
   height: 30px;
    margin-bottom: -3px;
- 
-  
-}
+ }
 .icon-container {
   text-align: center; /* Вирівнюємо вміст контейнера по горизонталі */
   display: inline-flex; /* Робимо контейнер flex-контейнером */
   align-items: center; /* Вирівнюємо елементи по вертикалі (якщо потрібно) */
-
 }
 .inside-icon{
   transform: translateX(-1px);
