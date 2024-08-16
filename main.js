@@ -36,3 +36,17 @@ window.onclick = function(event) {
         modal.style.style.display = 'none';
     }
 };
+
+
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  build: {
+    input: 'index.html',
+  },
+});
+
+
+import lightbox from 'lightbox2';
+
+lightbox.activate();
