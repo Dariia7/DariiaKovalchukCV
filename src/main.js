@@ -50,3 +50,5 @@ export default defineConfig({
 import lightbox from 'lightbox2';
 
 lightbox.activate();
+
+const lightbox = require('lightbox2');
