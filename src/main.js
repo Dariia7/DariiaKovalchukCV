@@ -37,18 +37,3 @@ window.onclick = function(event) {
     }
 };
 
-
-import { defineConfig } from 'vite';
-
-export default defineConfig({
-  build: {
-    input: 'index.html',
-  },
-});
-
-
-import lightbox from 'lightbox2';
-
-lightbox.activate();
-
-const lightbox = require('lightbox2');
