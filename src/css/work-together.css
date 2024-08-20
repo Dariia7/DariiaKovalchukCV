@@ -25,6 +25,7 @@ margin-bottom: 20px;
     flex-direction: column;
     gap: 32px;
     justify-content: space-between;
+    margin-bottom: 70px;
 }
 #cooperation-form input,
 #cooperation-form textarea {

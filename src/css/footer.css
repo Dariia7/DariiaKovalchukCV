@@ -48,3 +48,22 @@ text-align: center;
    font-size: 16px;
 }
 }
+.social-media-icon{
+  width: 48px;
+  height: 48px;
+  stroke:#6c3712;
+  fill: #6c3712;
+ 
+}
+.social-media-icon:hover,
+.social-media-icon:focus {
+  transform: scale(1.1); /* increase size on hover and focus */
+  stroke: #191970; /* keep stroke color the same */
+  fill: #191970; /* keep fill color the same */
+  cursor: pointer; /* add pointer cursor on hover */
+}
+
+.social-media-icon:hover svg,
+.social-media-icon:focus svg {
+  stroke-width: 2px; /* increase stroke width on hover and focus */
+}

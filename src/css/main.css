@@ -141,9 +141,7 @@ text-align: center;
     width: 34px;
     height: 34px;
   }
-  .lineBreak{
-    display: none;
-  }
+
   .icon {
     stroke: #191970;
     fill: #191970;
@@ -161,6 +159,14 @@ letter-spacing: 0.03em;
 
   .bold-style{
     font-weight: bold;
+    letter-spacing: 0;
+}
+.italics{
+  letter-spacing: 0;
+  font-style: italic;
+}
+.uni-list{
+  letter-spacing: 0;
 }
   .education-text{
     margin-bottom: 30px;
@@ -258,4 +264,57 @@ letter-spacing: 0.03em;
 .link-active:focus .icon-person {
   border: 2px solid #8B4513;
   transition: border 0.3s ease;
+}
+
+
+/*Languages section - test*/
+
+.language-trigger {
+  cursor: pointer;
+position: relative;
+font-size: 20px;
+margin-bottom: 60px;
+margin-top: 60px;
+font-weight: 600;
+text-align: center;
+  
+}
+
+
+.language-popup {
+  background-color: transparent;
+  border: none; /* removed border */
+  box-shadow: none; /* removed box-shadow */
+  display: none;
+  padding: 10px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto; /* changed from 200px to auto */
+}
+
+.language-popup ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* added display: flex to make li elements inline */
+  flex-wrap: wrap; /* added flex-wrap: wrap to make li elements wrap to next line */
+}
+
+.language-popup li {
+  margin-right: 10px; /* added margin-right to separate li elements */
+  margin-bottom: 0; /* removed margin-bottom */
+  display: inline-flex; /* changed from flex to inline-flex */
+  align-items: center;
+}
+
+.language-popup img {
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
+}
+
+.language-trigger:hover .language-popup {
+  display: block;
 }
