@@ -1,3 +1,9 @@
+// Описаний в документації
+import SimpleLightbox from "simplelightbox";
+// Додатковий імпорт стилів
+import "simplelightbox/dist/simple-lightbox.min.css";
+
+
 const form = document.getElementById('cooperation-form');
 const modal = document.getElementById('modal');
 const closeButton = document.querySelector('.close-button');
@@ -37,3 +43,4 @@ window.onclick = function(event) {
     }
 };
 
+const lightbox = new SimpleLightbox(".gallery a")
