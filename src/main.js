@@ -43,4 +43,4 @@ window.onclick = function(event) {
     }
 };
 
-const lightbox = new SimpleLightbox(".gallery a")
+const lightbox = new SimpleLightbox(".thumbnails a")
